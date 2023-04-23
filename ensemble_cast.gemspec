@@ -11,15 +11,17 @@ Gem::Specification.new do |spec|
   spec.summary = "Evaluate block in first argument"
   spec.description = <<~EOS
     Evaluate block in first argument.
+
     You can use `Module#ensemble(method_name)` method.
+
     When you call `ensemble(method_name)`, block passed to `method_name` will be evaluated in the context of the first argument of the block.
   EOS
-  spec.homepage = "https://github.com/tetetratra/ensemble"
+  spec.homepage = "https://github.com/tetetratra/ensemble_cast"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/tetetratra/ensemble"
+  spec.metadata["source_code_uri"] = "https://github.com/tetetratra/ensemble_cast"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

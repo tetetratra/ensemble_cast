@@ -39,6 +39,6 @@ end
 
 class Module
   def ensemble(method)
-    Inside.add(self, method.name.to_sym)
+    EnsembleCast.add(self, method.name.to_sym)
   end
 end
