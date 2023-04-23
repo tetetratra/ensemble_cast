@@ -8,17 +8,18 @@ Gem::Specification.new do |spec|
   spec.authors = ["tetetratra"]
   spec.email = ["44367208+tetetratra@users.noreply.github.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "Evaluate block in first argument"
+  spec.description = <<~EOS
+    Evaluate block in first argument.
+    You can use `Module#ensemble(method_name)` method.
+    When you call `ensemble(method_name)`, block passed to `method_name` will be evaluated in the context of the first argument of the block.
+  EOS
+  spec.homepage = "https://github.com/tetetratra/ensemble"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
-
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  spec.required_ruby_version = ">= 3.1.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/tetetratra/ensemble"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
