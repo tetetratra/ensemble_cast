@@ -2,6 +2,10 @@
 
 Evaluate block in first argument.
 
+This gem is experimental.
+By manipulating the stack of Ruby implementation, it provides features that is not possible with normal metaprogramming.
+**Do not use in production code.**
+
 ## Installation
 
 Add this line to your application's Gemfile:
