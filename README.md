@@ -32,13 +32,15 @@ block passed to `method_name` will be evaluated in the context of the first argu
 example:
 
 ```ruby
+require 'ensemble_cast'
+
 class Array
-  ensemble def my_select
-    select { |e| yield(e) }
+  ensemble def my_filter
+    filter { |e| yield(e) }
   end
 end
 
-[-2, -1, 0, 1, 2].my_select { even? && !negative? }
+[-2, -1, 0, 1, 2].my_filter { even? && !negative? }
 # => [0, 2]
 ```
 
